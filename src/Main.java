@@ -1,15 +1,31 @@
+import java.util.Date;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+    public static void main(String[] args) {// Array of strings
+        Date d = new Date(0);
+        char c = 'A'; // A SINGLE LETTER, NUMBER OR SYMBOL LIKE A DOLLAR SIGN OR SPACE
+        String fullName = "Bemi Hai";// string is a collection of charachter simmilar ro an array
+        String[] fruit = {"Orange","Banana","Apple"};// An array ("list) or string
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+
+        System.out.println(d);
+        System.out.println(c);
+        System.out.println(fullName);
+       // System.out.println(fruit[0] + (fruit[1] + (fruit[2] + (fruit[3]);
+        System.out.println(fruit.length); //show length property
+
+
+        int i =0;
+        for (String f : fruit){
+            System.out.println(f);
+            //i++;
+
+      //  for(int i = 0; i < fruit.length; i++) { // i = i + i
+            //0,1,2,x
+            System.out.println(i + fruit[i]);
         }
+        System.out.println("All Done");
     }
-}
+    }
